@@ -1,0 +1,8 @@
+<?php
+    
+    function clean_input($var){
+    	$var = strip_tags($var);
+		
+    }
+    
+?>

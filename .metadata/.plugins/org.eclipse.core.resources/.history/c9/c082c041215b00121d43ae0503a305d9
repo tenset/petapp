@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="twitter-bootstrap/docs/assets/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="twitter-bootstrap/docs/assets/css/datepicker.css" />
+<link rel="stylesheet" type="text/css" href="twitter-bootstrap/docs/assets/css/docs.css" />
+<link rel="stylesheet" type="text/css" href="css_custom/home.css" />
+
+	<title>index</title>
+	
+<meta name="author" content="Ten" />
+<!-- Date: 2013-01-04 -->
+</head>
+<body class="well">
+		<form class="form-horizontal" action="login.php">
+			<fieldset>
+				<legend> <label class="badge badge-important"><h2> Sign Up On PetBook</h2></label></legend>
+						<div class="control-group ">
+							<label class="control-label" for="firstname"> FIRST NAME </label>
+							<div class="controls">
+								<input type="text" class="input-large" id="firstname" > 
+								<span class="help-inline" style="font-size: 11px;">  </span>
+							</div>
+							<p> 
+							</p>
+							<label class="control-label" for="lastname"> LAST NAME  </label>
+							<div class="controls">
+								<input type="text" class="input-large" id="lastname" maxlength="15"/>
+								<span class="help-inline" style="font-size: 11px;">  </span>
+							</div>
+							<p>
+							</p>
+							<label class="control-label" for="email"> E-MAIL </label>
+							<div class="controls">
+								<input type="text" class="input-large" id="email"/>
+								<span class="help-inline" style="font-size: 11px;">  </span>
+							</div>
+							<p>
+							</p>
+							<label class="control-label" for="username"> USERNAME </label>
+							<div class="controls">
+								<input type="text" class="input-large" id="username"/> 
+								<span class="help-inline" style="font-size: 11px;">  </span>
+								<br />
+								<p class="help-inline" style="font-size:11px;color:black;"> Username must be at least 8 characters </p>
+							</div>
+							
+							<label class="control-label" for="password"> PASSWORD </label>
+							<div class="controls">
+								<input type="password" class="input-large" id="password"/> 
+								<span class="help-inline" style="font-size: 11px;">  </span>
+								<br />
+								<p class="help-inline" style="font-size:11px;color:black;"> At least 8 alphanumeric characters </p>
+							</div>
+							
+							<label class="control-label" for="password_confirm"> CONFIRM PASSWORD </label>
+							<div class="controls">
+								<input type="password" class="input-large" id="password_confirm"/>
+								<span class="help-inline" style="font-size: 11px;">  </span>
+							</div>
+							<p>
+								
+							</p>
+							<label class="control-label" for="dp3"> DoB </label>
+							<div class="controls">
+								<div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+								<input class="span2" size="16" type="text" value="12-02-2012">
+									 <span class="add-on"><i class="icon-calendar"></i></span>
+							</div>
+						</div>
+						
+						<p> </p>
+							<label class="control-label" for="password_confirm"> CAPTCHA </label>
+							<div class="controls">
+								<input type="text" class="input-small" id="password_confirm"/>
+								<span class ="inline-help"><img src="captcha.php" /> </span>
+							</div>
+							
+						</div>
+						<div class="form-actions">
+							<button type="submit" class="btn btn-info" > SIGN-UP </button>
+							<button type="reset" class="btn btn-danger"> CANCEL </button>
+						</div>
+			</fieldset>
+			</form>
+			<form class="form-inline" id="sign_in">
+				<input type="text" class="input-medium" placeholder="Email or Username">
+				<input type="password" class="input-medium" placeholder="Password">
+				<button type="submit" class="btn" ><i class="icon-ok-sign"></i> Sign In </button>
+			</form>
+			
+		<div class="footer">
+			<p> (c) petbook.com </p>
+		</div>
+		<script type="text/javascript" src="validate.js">
+		<script type="text/javascript" src="twitter-bootstrap/js/tests/unit/bootstrap-datepicker.js">
+		<script type="text/javascript" src="twitter-bootstrap/js/tests/bootstrap-datepicker.js">
+	</body>		
+</html>

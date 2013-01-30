@@ -1,0 +1,42 @@
+<?php
+	 session_start();
+	 define('CAPTCHA_NUMCHARS', 6);
+	 define('CAPTCHA_WIDTH', 115);
+     define('CAPTCHA_HEIGHT', 25);
+	//generate random pass-phrase
+	$pass_phrase ="";
+	for($i = 0; $i < CAPTCHA_NUMCHARS; $i++) {
+		$pass_phrase .= chr(rand(97, 122));
+	}
+	
+	//store in session variable
+	$_SESSION['pass_phrase'] = $pass_phrase;
+	
+	//create image 
+	$img = imagecreatetruecolor(CAPTCHA_WIDTH, CAPTCHA_HEIGHT);
+	
+	//set background color, text, graphics
+	$bg_color = imagecolorallocate($img, rand(200,255), rand(200, 255), rand(200,255));
+	$text_color = imagecolorallocate($img, 0, 0, 0);
+	$graphic_color = imagecolorallocate($img, 64, 65, 65);
+	
+	//fill the background
+	imagefilledrectangle($img, 0, 0, CAPTCHA_WIDTH, CAPTCHA_HEIGHT, $bg_color);
+	
+	// draw random lines
+	 for ($i = 0; $i < 5; $i++)	{
+		imageline($img, 0, rand()%CAPTCHA_HEIGHT, CAPTCHA_WIDTH, rand()%CAPTCHA_HEIGHT, $graphic_color);
+	 }
+	
+	//pixelate captcha
+	for ($i = 0; $i < 50; $i++) {
+		imagesetpixel($img, rand()%CAPTCHA_WIDTH, rand()%CAPTCHA_HEIGHT, $graphic_color);
+	}
+
+	
+	//write text into captcha
+	imagettftext($img, 18, 0, 10, CAPTCHA_HEIGHT-5, $text_color,"Cooperb.ttf", $pass_phrase);
+	header('Content-Type: image/png');
+	imagepng($img);
+	imagedestroy($img);
+?>

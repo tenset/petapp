@@ -1,0 +1,13 @@
+label {
+	font-size: 12px;
+	font-family: "Lucida Sans";
+	font-weight: bolder;
+}
+
+#sign_in {
+	position:relative;
+	left:2000px;
+	bottom:500px;
+}
+
+

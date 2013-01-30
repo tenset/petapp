@@ -1,0 +1,7 @@
+/**
+ * @author Ten
+ */
+var username = document.getElementById("username");
+	username.onclick = function(){
+		alert("hello");
+	}

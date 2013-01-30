@@ -1,0 +1,49 @@
+/**
+ * @author Ten
+ */
+	var username = document.getElementById("username");
+	var params = username.value;
+	var request = new XMLHttpRequest();
+	request.open("POST","usernameAjax.php",true);
+	request.setRequestHeader("Content-type", "application/x-www-form-urlenconded");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

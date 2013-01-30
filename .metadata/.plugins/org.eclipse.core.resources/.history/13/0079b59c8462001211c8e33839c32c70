@@ -1,0 +1,15 @@
+label {
+	font-size: 12px;
+	font-family: "Lucida Sans";
+	font-weight: bolder;
+}
+
+#sign_in {
+	position:relative;
+	left:800px;
+	bottom:500px;
+}
+
+.footer {
+	background-image: url("petbook/images/cubes.jpg"); 
+}

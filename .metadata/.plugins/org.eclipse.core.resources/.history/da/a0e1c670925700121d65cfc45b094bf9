@@ -1,0 +1,30 @@
+
+	function validate() {
+		var errors = new Array();
+		
+		for(var i=0; i < document.forms[0].elements.length; i++) {
+				if(document.forms[0].elements[i].type == "text") {
+					if(document.forms[0].elements[i].value == "") {
+							alert("hi"); //debug
+							errors.push("Empty "+document.forms[0].elements[i].id+" field");
+						}
+					}
+				else if(document.forms[0].elements[i].type == "password") {
+					if(document.forms[0].elements[i].value == "") {
+							errors.push("Empty " +document.forms[0].elements[i].id+" field");
+							alert("madd");
+					}
+					
+				}
+			}//end of for loop
+				if(errors.length != 0){
+					alert('hello');
+					return true;
+				}
+		
+		}// end of validate
+	
+	window.onload = function() {
+		document.forms[0].onsubmit = validate;
+		
+	}

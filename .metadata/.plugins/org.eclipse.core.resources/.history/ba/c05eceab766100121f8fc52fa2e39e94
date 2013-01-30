@@ -1,0 +1,5 @@
+/**
+ * @author Ten
+ */
+var username = document.getElementById("username").value;
+alert(username);

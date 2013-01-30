@@ -1,0 +1,68 @@
+/**
+ * @author Ten
+ */
+	function showUser() {
+	var username = document.getElementById("username");
+	var params = "username=" + username.value;
+	var request = new XMLHttpRequest();
+	request.open("POST","usernameAjax.php",true);
+	
+	//ajax call
+	request.onreadystatechange = function(){
+		if(request.readyState == 4){
+			if(request.status == 200){
+				if(request.responseText != null ) {
+					document.getElementById("check_username").innerHTML = request.responseText;
+				}
+				else alert("Ajax error: No data received")
+			}
+			else alert("Ajax error : "+request.statusText);
+		}
+	}
+	request.send(params);
+	}
+	
+	//call this on username input
+	var username = document.getElementById("username");
+	username.onfocus = function(){
+		var check = document.getElementById("check_username");
+		check.innerHTML = "<img src=\"images/ajax-loader.gif\" style=\"width:40px; height:40px;\"/>"
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

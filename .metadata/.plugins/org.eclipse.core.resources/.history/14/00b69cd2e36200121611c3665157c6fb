@@ -1,0 +1,16 @@
+label {
+	font-size: 12px;
+	font-family: "Lucida Sans";
+	font-weight: bolder;
+}
+
+.form-inline {
+	float:right;
+	position:relative;
+	bottom: 480px;
+}
+
+#sign_up_buttons{
+	position:relative;
+	left:100px;
+}

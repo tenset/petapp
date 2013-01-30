@@ -1,0 +1,15 @@
+
+	window.onload = function() {
+		var errors = new Array();
+		
+		for(var i=0; i < document.forms[0].elements.length; i++) {
+				if(document.forms[0].elements[i].type == "text") {
+					if(document.forms[0].elements[i].value == "") {
+							errors.push("Empty "+document.forms[0].elements[i].id+" field");
+							document.writeln(errors[0]);
+						}
+					}
+					
+				}
+			
+		}

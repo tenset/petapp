@@ -1,0 +1,16 @@
+package com.tenset.hello;
+import org.apache.cordova.DroidGap;
+import android.os.Bundle;
+
+
+public class MainActivity extends DroidGap {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        super.loadUrl("file:///android_asset/www/index.html");
+    }
+
+
+    
+}

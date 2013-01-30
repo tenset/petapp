@@ -1,0 +1,10 @@
+<?php
+    
+    function clean_input($var){
+    	$var = strip_tags($var);
+		$var = mysql_escape_string($var);
+		$var = stripslashes($var);
+		
+    }
+    
+?>

@@ -1,0 +1,8 @@
+<?php
+ $str = FALSE;
+  if(3>2) {
+  	echo "hello";
+  	$str = TRUE;
+ }
+	
+?>

@@ -1,0 +1,17 @@
+<?php
+    //create a class of users
+    class User {
+    	private $firstname, $lastname, 
+    	$email, $username, $password; // add $date_of_birth of later
+		
+		function __construct($firstname, $lastname, $email,
+		$username, $password) {
+			$this->firstname = $firstname;
+			$this->lastname = $lastname;
+			$this->email = $email;
+			$this->username = $username;
+			$this->password = $password;
+		}
+    }
+	
+?>

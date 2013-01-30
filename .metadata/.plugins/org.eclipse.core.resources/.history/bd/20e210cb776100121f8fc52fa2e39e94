@@ -1,0 +1,47 @@
+/**
+ * @author Ten
+ */
+var username = document.getElementById("username");
+	params = username.value;
+	request = new XMLHttpRequest();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

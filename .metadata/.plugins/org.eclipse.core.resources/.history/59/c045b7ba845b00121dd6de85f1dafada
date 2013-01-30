@@ -1,0 +1,33 @@
+<?php
+    
+    function sanitizeString($var){
+    	$var = strip_tags($var);
+		$var = stripslashes($var);
+		$var = htmlentities($var);
+		return $var;
+    }
+	
+	function sanitizeMySQL($var){
+		$var = mysql_real_escape_string($var);
+		$var = sanitizeString($var);
+		return $var;
+	}
+	
+	
+	
+	//String Manipulation to Cap first Letters of names
+	
+	function small_char($var){
+		$var = strtolower($var);
+		return $var;
+	}
+	
+	function cap_firstChar($var){
+		$var = strtoupper($var);
+		return $var;
+	}
+	
+	function db_text($var){
+		
+	}
+?>

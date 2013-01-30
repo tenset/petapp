@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+C:\wamp\www\.metadata\.plugins\org.eclipse.jdt.core
+985413812.index
+4161103913.index
+293605430.index

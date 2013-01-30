@@ -1,0 +1,12 @@
+<?php
+echo <<<_end
+	<html>
+		<head>
+		</head>
+		<body>
+			asdfasdfasdf
+		</body>
+	<html>
+_end;
+
+?>

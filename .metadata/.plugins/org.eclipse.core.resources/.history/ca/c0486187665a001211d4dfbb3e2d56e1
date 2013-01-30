@@ -1,0 +1,24 @@
+<?php
+	//Define captcha constants
+    define('CAPTCHA_NUMCHARS', 6);
+	define('CAPTCHA_WIDTH', 100);
+	define('CAPTCHA_HEIGHT', 25);
+	
+	//generate random pass-phrase
+	$pass_phrase ="";
+	for($i = 0; $i < CAPTCHA_NUMCHARS; $i++) {
+		$pass_phrase .= chr(rand(97, 122));
+	}
+	
+	//create image 
+	$img = imagecreatetruecolor(CAPTCHA_WIDTH, CAPTCHA_HEIGHT);
+	
+	//set background color, text, graphics
+	$bg_color = imagecolorallocate($img, 255, 255, 255);
+	$text_color = imagecolorallocate($img, 0, 0, 0);
+	$graphic_color = imagecolorallocate($img, 64, 65, 65);
+	
+	//fill the background
+	imagefilledrectangle($image, 0, 0, CAPTCHA_WIDTH, CAPTCHA_HEIGHT, $bg_color);
+	
+?>

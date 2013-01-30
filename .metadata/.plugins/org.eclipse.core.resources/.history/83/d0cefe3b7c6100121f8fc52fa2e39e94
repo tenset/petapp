@@ -1,0 +1,57 @@
+/**
+ * @author Ten
+ */
+	var username = document.getElementById("username");
+	var params = "username=" + username.value;
+	var request = new XMLHttpRequest();
+	request.open("POST","usernameAjax.php",true);
+	request.setRequestHeader("Content-type", "application/x-www-form-urlenconded");
+	//ajax call
+	request.onreadystatechange = function(){
+		if(request.readyState == 4){
+			alert("asdf");
+		}
+		else{
+			alert("false");
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

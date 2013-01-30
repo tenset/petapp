@@ -1,0 +1,72 @@
+<?php
+
+echo <<<_end
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="twitter-bootstrap/docs/assets/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css_custom/home.css" />
+		
+			<title>index</title>
+			
+	   	<meta name="author" content="Ten" />
+	<!-- Date: 2013-01-04 -->
+	</head>
+	<body class="well">
+				<form class="form-horizontal">
+					<fieldset>
+						<legend> <label class="badge badge-important"> Sign Up On PetBook </label></legend>
+								<div class="control-group ">
+									<label class="control-label" for="firstname"> FIRST NAME </label>
+									<div class="controls">
+										<input type="text" class="input-large" id="firstname" > 
+										<span class="help-inline" style="font-size: 11px;"> hello </span>
+									</div>
+									<p> 
+									</p>
+									<label class="control-label" for="lastname"> LAST NAME  </label>
+									<div class="controls">
+										<input type="text" class="input-large" id="lastname"/>
+									</div>
+									<p>
+									</p>
+									<label class="control-label" for="email"> E-MAIL </label>
+									<div class="controls">
+										<input type="text" class="input-large" id="email"/>
+									</div>
+									<p>
+									</p>
+									<label class="control-label" for="username"> USERNAME </label>
+									<div class="controls">
+										<input type="text" class="input-large" id="username"/> <br />
+										<p class="help-inline" style="font-size:11px;color:red;"> Username must be at least 8 characters </p>
+									</div>
+									
+									<label class="control-label" for="password"> PASSWORD </label>
+									<div class="controls">
+										<input type="password" class="input-large" id="password"/> <br />
+										<p class="help-inline" style="font-size:11px;color:red;"> At least 8 alphanumeric characters </p>
+									</div>
+									
+									<label class="control-label" for="password_confirm"> CONFIRM PASSWORD </label>
+									<div class="controls">
+										<input type="password" class="input-large" id="password_confirm"/>
+									</div>
+									
+								</div>
+								<div class="form-actions">
+									<button type="submit" class="btn btn-info" > sign-up </button>
+								</div>
+					</fieldset>
+					</form>
+	
+	</body>
+	<script type="text/javascript" src="validate.js"> 
+		</script>
+</html>
+
+_end;
+?>

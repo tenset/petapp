@@ -1,0 +1,11 @@
+<?php
+ $str = FALSE;
+  if(3>2) {
+  	echo "hello";
+  	$str = TRUE;
+ }
+	if($str) {
+		echo "asda";
+	}
+	
+?>

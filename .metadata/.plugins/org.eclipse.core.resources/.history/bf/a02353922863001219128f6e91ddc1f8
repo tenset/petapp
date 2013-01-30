@@ -1,0 +1,9 @@
+<?php
+		require_once 'db_credentials.php';
+    	$user ="";
+		if(isset($_POST['user_name'])) {
+			$user = $_POST['user_name'];
+			echo "Username is available";
+		}
+		
+  ?>

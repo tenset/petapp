@@ -1,0 +1,11 @@
+<?php
+    //create a class of users
+    class User {
+    	private $firstname, $lastname, 
+    	$email, $username, $password, $date_of_birth;
+		
+		function __construct($firstname, $lastname, $email,
+		$username, $password, $date_of_birth);
+    }
+	
+?>

@@ -1,0 +1,6 @@
+/**
+ * @author Ten
+ */
+var username = document.getElementById("username");
+	params = username.value;
+	alert(params);

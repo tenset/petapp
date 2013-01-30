@@ -1,0 +1,8 @@
+<?php
+//
+echo <<<_END
+THIS IS BETREER
+
+
+_END;
+?>

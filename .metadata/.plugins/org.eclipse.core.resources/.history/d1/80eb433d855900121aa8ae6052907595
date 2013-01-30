@@ -1,0 +1,45 @@
+///validate form no input
+	function validate() {
+		var errors = new Array();
+		
+		for(var i=0; i < document.forms[0].elements.length; i++) {
+				if(document.forms[0].elements[i].type == "text") {
+					if(document.forms[0].elements[i].value == "") {
+							alert("hi"); //debug
+							errors.push("Empty "+document.forms[0].elements[i].id+" field");
+						}
+					}
+				else if(document.forms[0].elements[i].type == "password") {
+					if(document.forms[0].elements[i].value == "") {
+							errors.push("Empty " +document.forms[0].elements[i].id+" field");
+							alert("madd"); //debug
+					}
+					
+				}
+			}//end of for loop
+				if(errors.length == 0){
+					return true;
+				}
+				else {
+					return false;
+				}
+		
+		}// end of validate
+	
+	window.onload = function() {
+		document.forms[0].onsubmit = validate;
+		document.forms[0].elements.onblur = clickme;
+		alert("hellooo");
+	}
+	
+	function clickme (){
+		alert("click");
+	}
+	
+// validate wrong input
+	
+	var firstname = document.forms[0].elements[0].value;
+	var lastname = document.forms[0].elements[1].value;
+	var email = document.forms[0].elements[2].value;
+	
+	

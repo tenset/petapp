@@ -1,0 +1,4 @@
+<?php //home page petbook.com
+    header('Location:http//www.myjoyonline.com');
+	exit;
+?>

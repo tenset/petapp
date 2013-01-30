@@ -1,0 +1,12 @@
+label {
+	font-size: 12px;
+	font-family: "Lucida Sans";
+	font-weight: bolder;
+}
+
+.form-inline {
+	float:right;
+	position:relative;
+	bottom: 450px;
+}
+
